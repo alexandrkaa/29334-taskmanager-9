@@ -1,3 +1,4 @@
+import {getComponent} from './render';
 export const getTaskCardComponent = () => {
   const markup = `
     <article class="card card--blue">
@@ -66,6 +67,6 @@ export const getTaskCardComponent = () => {
       </div>
     </article>
   `;
-  // return getComponent(markup);
-  return markup;
+  return getComponent(markup);
+  // return markup;
 };

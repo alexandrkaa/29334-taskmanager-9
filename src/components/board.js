@@ -1,7 +1,7 @@
-import {getTaskCardComponent} from './card.js';
-import {getEditCardComponent} from './card-edit.js';
-import {getLoadMoreComponent} from './load-more.js';
-import {renderComponent} from './render';
+import {getTaskCardComponent} from './card';
+import {getEditCardComponent} from './card-edit';
+import {getLoadMoreComponent} from './load-more';
+import {renderComponent, getComponent} from './render';
 
 export const getBoardComponent = () => {
   const markup = `
@@ -15,12 +15,11 @@ export const getBoardComponent = () => {
       </div>
     </section>
   `;
-  // const board = getComponent(markup);
-  const board = markup;
+  const board = getComponent(markup);
   const taskContainer = board.querySelector(`.board__tasks`);
   renderComponent(taskContainer, getEditCardComponent());
   for (let i = 1; i <= 3; i++) {
-    renderComponent(taskContainer, getTaskCardComponent(), `afterend`);
+    renderComponent(taskContainer, getTaskCardComponent());
   }
   renderComponent(board, getLoadMoreComponent());
   return board;

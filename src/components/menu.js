@@ -1,3 +1,4 @@
+import {getComponent} from './render';
 export const getMenuComponent = () => {
   const markup = `
     <section class="control__btn-wrap">
@@ -29,6 +30,6 @@ export const getMenuComponent = () => {
       >
     </section>
   `;
-  // return getComponent(markup);
-  return markup;
+  return getComponent(markup);
+  // return markup;
 };

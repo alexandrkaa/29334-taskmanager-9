@@ -1,3 +1,4 @@
+import {getComponent} from './render';
 export const getEditCardComponent = () => {
   const markup = `
     <article class="card card--edit card--yellow card--repeat">
@@ -268,6 +269,5 @@ export const getEditCardComponent = () => {
       </form>
     </article>
   `;
-  // return getComponent(markup);
-  return markup;
+  return getComponent(markup);
 };

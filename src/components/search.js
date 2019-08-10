@@ -1,3 +1,4 @@
+import {getComponent} from './render';
 export const getSearchComponent = () => {
   const markup = `
     <section class="main__search search container">
@@ -10,6 +11,6 @@ export const getSearchComponent = () => {
       <label class="visually-hidden" for="search__input">Search</label>
     </section>
   `;
-  // return getComponent(markup);
-  return markup;
+  return getComponent(markup);
+  // return markup;
 };

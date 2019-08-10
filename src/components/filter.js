@@ -1,3 +1,4 @@
+import {getComponent} from './render';
 export const getFilterComponent = () => {
   const markup = `
     <section class="main__filter filter container">
@@ -69,6 +70,6 @@ export const getFilterComponent = () => {
       >
     </section>
   `;
-  // return getComponent(markup);
-  return markup;
+  return getComponent(markup);
+  // return markup;
 };
