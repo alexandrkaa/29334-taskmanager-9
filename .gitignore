@@ -15,3 +15,6 @@ node_modules/
 build/
 
 .jshintrc
+
+public/bundle.js
+public/bundle.js.map
